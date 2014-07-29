@@ -1,0 +1,666 @@
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Font ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: script2;
+    src: url(../fonts/Annabelle.ttf);
+}
+@font-face {
+    font-family: script3;
+    src: url(../fonts/Pacifico.ttf);
+}
+@font-face {
+    font-family: sans1;
+    src: url(../fonts/Tall.ttf);
+}
+@font-face {
+    font-family: script1;
+    src: url(../fonts/James.ttf);
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- General styles--------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+.main-logo, .skills-grid, .millin-about, .love-icons{
+    max-width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Yellowtail', cursive;
+    font-size: 70px;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+}
+
+h6{
+    text-align:center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- NavBar ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+.navbar{
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-inverse{
+    opacity: .85;
+    -webkit-transition: background 2s ease;
+    -moz-transition: background 2s ease;
+    -o-transition: background 2s ease;
+    transition: background 2s ease;
+}
+
+.navbar-default{
+    background: none;   
+    -webkit-transition: background .5s ease;
+    -moz-transition: background .5s ease;
+    -o-transition: background .5s ease;
+    transition: background .5s ease;
+}
+
+.navbar-right{
+    right: -20px;
+    position:relative;
+}
+
+.navbar .nav > li > a{
+    color: #fcfcfc;
+    text-shadow: none;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+}
+
+.navbar .nav > li > a:hover{
+    color: #EDEEF5;
+    border-bottom: 5px solid #EDEEF5;
+}
+
+.navbar .dropdown-menu{
+    box-shadow: none;
+    border: none;
+    min-width: 250px;
+}
+
+.navbar-default .dropdown-menu{
+    background: none; 
+}
+
+.navbar-inverse .dropdown-menu{
+    background-color: #282828;
+    opacity: 0.5;
+}
+
+.navbar-brand img{
+    height: 200%;
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+
+.dropdown-menu img{
+    height: 25px;
+}
+
+.dropdown-menu  a {
+    margin-left: 18px;
+}
+
+.navbar-default .navbar-nav>.open>a:focus {
+    background: none;
+}
+
+/* dropdown animation */
+
+.open > .dropdown-menu {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);  
+  opacity:1;
+}
+  
+.dropdown-menu {
+  opacity:.3;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation-fill-mode: forwards;  
+  animation-fill-mode: forwards; 
+  -webkit-transform: scale(1, 0);
+  display: block; 
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Home ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+#home { 
+  height: 1000px; 
+  position: relative;
+}
+ 
+#video-background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.tint{
+    background-color: black;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20%;    
+}
+
+.main-logo{
+    height: 50%;
+    margin: auto;
+    display: block;
+}
+
+.tint .my-quote{
+    color:#fcfcfc;
+    text-align: center;
+    font-family: script2;
+    font-size: 30px;
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Henry Quote -----------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+.quote-outer{
+    background-color: #1C2127;
+}
+
+.quote-inner{
+    margin: 7% auto;
+}
+
+.quote-inner p{
+    color: #EDEEF5;
+    font-size: 25px;
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Education ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+#education{
+    background: url(../images/backgrounds/uwcampus.jpg) fixed;
+    background-size: cover;
+}
+
+#education h1{
+    color: #EDEEF5;
+    font-family: sans1;
+}
+
+.education-inner{
+    margin: 5% auto;
+}
+
+.fa-graduation-cap {
+    opacity: 0.4;
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Timeline ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+.timeline-title-outer{
+    background-color: #EDEEF5;
+}
+
+.timeline-title-inner{
+    margin:3% auto;
+}
+
+.timeline-title-inner h1{
+    color: #28384B;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 25px solid #EDEEF5;
+    margin: 0 auto;
+}
+
+.timeline-content-outer{
+    background-color: #28384B;
+}
+
+.timeline-content-inner{
+    margin: auto;
+}
+
+.timeline-content-inner h6{
+    color: #EDEEF5;
+}
+
+.timeline-content-inner p{
+    color: #EDEEF5;
+}
+
+.timeline-col{
+    margin: 10% 0;
+}
+
+.timeline-col-left, .timeline-col-right{
+    margin: 10.6% 0;
+}
+
+.timeline-col-right h6, .timeline-col-right p{
+    text-align: left;
+}
+
+.timeline-col-left h6, .timeline-col-left p{
+    text-align: right;
+}
+
+.line{
+    height: 200px;
+    width: 5px;
+    margin: auto;
+    background-color: #EDEEF5;
+    opacity: .6;
+}
+
+.timeline-block{
+    height: 240px;
+}
+
+.fa-briefcase, .fa-university, .fa-pencil{
+    color: #28384B;
+    text-align: center;
+    position:relative;    
+    opacity: 1;
+}
+
+.fa-pencil{
+    top:5px;
+}
+
+.fa-university{
+    top:15px;
+    left:20px;
+}
+
+.fa-briefcase{
+    top:15px;
+    left:-20px;
+}
+
+.round{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-color: #EDEEF5;
+    opacity: 0.7;
+    position: relative;
+}
+
+.round.pencil{
+    top: -150px;
+}
+
+.button{
+    margin:auto;
+    background-color: #EDEEF5;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.button p{
+    color: #28384B;
+    padding: 7%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.button:hover{
+    opacity: .5;
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Skills ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+#skills-title{
+    background: url(../images/backgrounds/skills.jpg) fixed;
+    background-size: cover;
+}
+
+#skills-title h1{
+    color: #EDEEF5;
+}
+
+.skills-title-inner{
+    margin: 5% auto;
+}
+
+.skills-grid{
+    margin: auto;
+    margin-top: 5%;
+}
+
+.skills-content-outer{
+    background-color: #28384B;
+}
+
+.skills-content-inner{
+    margin:5% auto;
+}
+
+.skills-name p {
+    color: #EDEEF5;
+    font-size: 20px;
+}
+
+.skills-name-left p{
+    text-align: right;
+}
+
+.skills-name-right p{
+    text-align: left;
+} 
+
+.skills-bar{
+    height:20px;
+    background-color: #EDEEF5;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    width:0;
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- About ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+#about{
+    background: url(../images/backgrounds/millin.jpg) fixed;
+    background-size: cover;
+}
+
+.about-inner{
+    margin: 5% auto;
+}
+
+#about p{
+    color: #EDEEF5;
+    font-size: 18px;
+    text-align: left;
+}
+
+#about h1{
+    color: #EDEEF5;
+}
+
+.millin-about{
+    width:25%;
+    margin: 0 5%;   
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Love ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+.love-title-outer{
+    background-color: #EDEEF5;
+}
+
+.love-title-inner{
+    margin:3% auto;
+}
+
+.love-title-inner h1{
+    font-family: 'Exo 2', sans-serif;
+    color: #28384B;
+    font-size:55px;
+}
+
+.love-icons{
+    width: 150px;
+    margin-left:5%;
+    margin-top:5%;
+    position: relative;
+}
+
+.batman{
+    width: 250px;
+}
+
+.suits{
+    width:100px;
+}
+
+.love-content-inner{
+    margin:3% auto 10%;
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Contact ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+.contact-outer{
+    height: 800px;
+    background: url(../images/backgrounds/Contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.full-logo{
+    height:50px;
+    opacity:.3;
+    z-index: 3;
+    margin: 30% auto;
+    display: block;
+}
+.signal{
+    position:relative;
+    left:50px;
+    top:42px;
+}
+.contact-box{
+    background-color: #EEDEF5;
+    opacity: .3;
+    padding:2% 0;
+    position: relative;
+}
+
+.contact-content{
+    position:relative;
+    top:-250px;
+}
+
+.trademark{
+    background-color: #1C2127;
+}
+.trademark img{
+    height:50px;
+    margin:auto;
+    display: block;
+}
+
+.trademark p{
+    color: #fcfcfc;
+    font-size:10px;
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Scroll ---------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+
+.scrollpoint{
+     opacity:0;
+}
+
+/* -------------------------------------------------------------------------------------------------
+----------------------------------------------- Media Queries ----------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1600px) {
+    .main-logo{
+        height:60%;
+    }
+}
+/* <1180 px */
+@media screen and (max-width: 1180px) {
+    .love-icons{
+        width: 130px;
+    }
+    .batman{
+        width:160px;
+    }
+}
+
+
+/* <1000 px */
+@media screen and (max-width: 1000px) {
+
+    .main-logo{
+        height:30%;
+    }
+    .tint .my-quote{
+        font-size: 25px;
+    }
+    
+    .millin-about{
+        width: 35%;
+    }
+     .love-icons{
+        width: 100px;
+    }
+    .batman{
+        width:130px;
+    }
+}
+
+
+/* <768 px */
+@media screen and (max-width: 768px) {
+    .tint{
+        background: url(../images/backgrounds/bubble.jpg);
+       
+        background-size: 100% 100%;
+    }
+    .scrollpoint{
+        opacity:1;
+    }
+    h6{
+        font-size:16px;
+    }
+    p{
+        font-size:14px;
+    }
+    .round{
+        height: 80px;
+        width: 80px;
+    }
+    .quote-inner p{
+        font-size: 18px;
+    }
+    .skills-name p{
+        font-size: 18px;
+        line-height: 1.65;
+    }
+    .col-xs-4, .col-xs-8{
+        height: 400px;
+    }
+    .navbar{
+        opacity: .9;
+        border:none;
+        box-shadow: none;
+        background-color: #222;
+    }
+    .navbar-brand img{
+        left: 0px;
+    }
+    .navbar .nav > li > a:hover{
+        border: none;
+    }
+    .love-icons{
+        width: 90px;
+    }
+    .batman{
+        width:120px;
+    }
+  
+
+    
+    .contact-box h1{
+        font-size:50px;
+    }
+    .contact-box p{
+        font-size:18px;
+    }
+    .signal{
+        height:500px;
+    }
+}
+
+/* <580 px */
+@media screen and (max-width: 580px) {
+    
+    h6{
+        font-size:14px;
+    }
+    p{
+        font-size:11px;
+    }
+    h1{
+        font-size:50px;
+    }
+    .timeline-block{
+        height: 340px;
+    }
+    .line{
+        height: 300px;
+    }
+
+    .love-title-inner h1{
+        font-size:39px;
+    }
+    .tint .my-quote{
+        font-size: 30px;
+    }
+    #about p{
+        font-size: 14px;
+    }    
+    .full-logo{
+        height:35px;
+    }
+    .signal{
+        height:300px;
+        left: -50px;
+    }
+    .contact-content{
+        top:50px;
+    }
+}
