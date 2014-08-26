@@ -1,6 +1,4 @@
-
- 
-$(document).ready(function(){
+ $(document).ready(function(){
 
     /*------- Parallax BG -------*/
     $(window).resize(function(){
@@ -23,9 +21,17 @@ $(document).ready(function(){
         }
     });
  
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $('#home').css({'height': '500px'});
+        $('.contact-outer').css({'height': '600px'});
+    }
+     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('#video-background').hide();
         $('.tint').css({'background-color':'none', 'background':'url(../images/backgrounds/bubble.jpg);', 'opacity':'1', 'background-size': '100% 100%'});
+        $('#education').css({'background':'none', 'background-color': '#28384B'});
+    }
+     if( /iPhone|iPod|iPad/i.test(navigator.userAgent) ) {
+        $('#education').css({'background':'none', 'background-color': '#28384B'});
     }
  
     /*------- Home Logo transaction -------*/
