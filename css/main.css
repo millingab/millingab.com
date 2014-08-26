@@ -6,17 +6,10 @@
     font-family: script2;
     src: url(../fonts/Annabelle.ttf);
 }
-@font-face {
-    font-family: script3;
-    src: url(../fonts/Pacifico.ttf);
-}
+
 @font-face {
     font-family: sans1;
     src: url(../fonts/Tall.ttf);
-}
-@font-face {
-    font-family: script1;
-    src: url(../fonts/James.ttf);
 }
 
 /* -------------------------------------------------------------------------------------------------
@@ -544,13 +537,6 @@ h6{
 /* <1000 px */
 @media screen and (max-width: 1000px) {
 
-    .main-logo{
-        height:30%;
-    }
-    .tint .my-quote{
-        font-size: 25px;
-    }
-    
     .millin-about{
         width: 35%;
     }
@@ -628,6 +614,9 @@ h6{
 /* <580 px */
 @media screen and (max-width: 580px) {
     
+    .tint .my-quote{
+        font-size: 25px;
+    }
     h6{
         font-size:14px;
     }
@@ -648,7 +637,7 @@ h6{
         font-size:39px;
     }
     .tint .my-quote{
-        font-size: 30px;
+        font-size: 20px;
     }
     #about p{
         font-size: 14px;
