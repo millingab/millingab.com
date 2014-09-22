@@ -447,11 +447,11 @@ a:hover{
     position: relative;
 }
 
-.batman{
-    width: 250px;
+.wide{
+    width: 220px;
 }
 
-.suits{
+.narrow{
     width:100px;
 }
 
@@ -537,10 +537,10 @@ a:hover{
 /* <1180 px */
 @media screen and (max-width: 1180px) {
     .love-icons{
-        width: 130px;
+        width: 120px;
     }
-    .batman{
-        width:160px;
+    .wide{
+        width:180px;
     }
 }
 
@@ -554,8 +554,8 @@ a:hover{
      .love-icons{
         width: 100px;
     }
-    .batman{
-        width:130px;
+    .wide{
+        width:150px;
     }
 }
 
@@ -605,12 +605,9 @@ a:hover{
     .love-icons{
         width: 90px;
     }
-    .batman{
-        width:120px;
-    }
-  
-
-    
+    .wide{
+        width:130px;
+    }    
     .contact-box h1{
         font-size:50px;
     }
@@ -662,5 +659,11 @@ a:hover{
     }
     .contact-content{
         top:50px;
+    }
+    .love-icons{
+        width: 90px;
+    }
+    .wide{
+        width: 90px;
     }
 }
